@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="imge/x-icon" href="imges/icon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Think | Думай</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<header> 
+            <h2 style="text-align:center"><em>Think | Думай</em></h2>             
+    <h4 style="text-align:center"><em>Сначала подумай, потом сделай!</em></h4>
+</header>
+<body>
+    <h2 style="text-align:center"><strong>Как написать сервер для сайта на Python?</strong></h2>
+    <div class="glav">
+        <ul class="glavspisok">
+          <li><a href="#"> Ссылки  </a>
+            <ul>
+              <li><a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_Python">История Python</a></li>
+              <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80_(%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)">Что такое Сервер? </a></li>
+              <li><a href="https://ru.wikipedia.org/wiki/CGI">CGI</a></li>
+              <li><a href="https://ru.wikipedia.org/wiki/Flask_(%D0%B2%D0%B5%D0%B1-%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA)">Flask</a></li>
+              <li><a href="https://andreymal.org/socket3/">Socket</a></li>
+              <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8">stderr<br>stdout</a></li>
+            </ul>
+         
+    </div>
+    <h4 style="text-align:center">Имеется много разных <a href="https://ru.wikipedia.org/wiki/Scrypt">скриптов</a> (кодов) для напиания сервера для сайта на Python...<br> Например: Flask или Socket, но есть способы и проще. К таким простым способам относится CGI.<br>Но что такое CGI. CGI - это Common Gateway Interface и является мощным средством динамической<br> генерации Веб страниц.<br> CGI скрипты вызываются веб-сервером, а результат их работы отправляется на клиентский браузер.<br> Таким образом, CGI скрипты способны выполнять любые запросы клиента на сервере и отправлять клиенту<br> результаты запроса.<br><br>CGI-приложение выполняет все необходимые операции и формирует результаты в виде HTML.<br> Сформированный гипертекст возвращается веб-серверу через стандартный поток вывода (stdout).<br> Сообщения об ошибках передаются через stderr. Веб-сервер передает результаты запроса клиенту (Более подробно по ссылке).<br><br>Для написания кода CGI не нужно устанавливать модули!<br>Создаём Python файл под названием star_server_windows.py.<br>И печатаем скрипт<br> from http.server import HTTPServer, CGIHTTPRequestHandler<br>server_address = ("",8000)<br>httpd = HTTPServer(server_address, CGIHTTPRequestHandler)<br>httpd.serve_forever(), число 8000 является портом вашего сайта.<br>Лучше всего писать этот скрипт в IDLE Python.<br>Далее в папке, где находится Python файл создаём папку cgi-bin и файл my.txt<br>После этого в my.txt пищем всё что хочется.<br>Дальше в любом браузере вбиваем localhost:8000</h4>
+<center>
+    <table border="1">
+        <tr>
+            <td><img src="im.png" width="300"></td>
+        </tr>
+    </table>
+</center>
+    <h4 style="text-align:center">После чего вы оказываетесь на своём сайте, где перед вами что-то не понятное</h4>
+<center>
+    <table border="1">
+        <tr>
+            <td><img src="for.png" width="300"></td>
+        </tr>
+    </table>
+</center>
+    <h4 style="text-align:center">Но беспокоиться не нужно, ведь это ваш сайт.<br>Немного ранее мы создали my.txt, на сайте ссылка которая называется как ваш файл.<br>Нажав на неё вы увидите текст, который вы написали в my.txt</h4>
+</body>
+
+<footer>
+       <div id="social">
+
+       </div>
+       <div id="rights">
+            <p><strong>Все права защищены &copy;</p></strong>
+       </div>
+       <div>
+           <h4>Создатель сайта <em>Магомедкадиев Курбан</em></h4>
+       </div>
+</footer>
+
+</html>
